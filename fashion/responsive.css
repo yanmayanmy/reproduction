@@ -1,0 +1,52 @@
+@media (max-width: 800px){
+    .wrapper{
+        display: block;
+        margin-top: 60px;
+    }
+
+    .sidebar{
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        height: 60px;
+    }
+
+    .sidebar-contents{
+        height: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar-logo{
+        padding: 0;
+    }
+
+    .sidebar-menu{
+        display: none;
+    }
+
+    .sidebar-icons{
+        display: none;
+    }
+
+    .main-contents{
+        width: 100%;
+    }
+
+    .brand-wrapper{
+        display: block;
+    }
+
+    .brand-wrapper .item{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .brand-wrapper img{
+        width: 40%;
+    }
+}

@@ -1,0 +1,289 @@
+/**********************
+        header 
+**********************/
+header{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    border-bottom: solid 0.2px rgb(48, 48, 48);
+}
+
+.header-wrapper{
+    background-color: black;/*ハンバーガーメニューを表示する際にバーの後ろから現れるようにするため*/
+    height: 100%; /*忘れがち*/
+    width: 100%; /*忘れがち*/
+    position: relative;
+    z-index: 20;
+}
+
+header img{
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hamberger-menu{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+}
+
+
+#pulldown{
+    position: fixed;
+    top: 22px;
+    right: 16px;
+    z-index: 30;
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+.navbar{
+    background-color: black;
+    transform: translateY(-120%);
+    transition: 0.5s;
+}
+
+.nav-menu{
+    font-size: 14px;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.nav-menu li{
+    height: 60px;
+    border-bottom: solid 0.1px #ccc;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.nav-menu li:last-child{
+    border-bottom: solid 2px #ccc;
+}
+
+.nav-menu i{
+    padding: 0 10px;
+}
+
+.nav-menu a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    z-index: 10;
+}
+
+.navbar .sns-icons{
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 0.1px #ccc;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar .sns-icons a:first-child{
+    padding-left: 10px;
+}
+
+.navbar .sns-icons a{
+    padding-left: 20px;
+}
+
+#pulldown:checked ~ .navbar{
+    transform: translateY(0%);
+}
+
+/**********************
+        wrapper 
+**********************/
+.wrapper{
+    background-color: black;
+}
+
+/**********************
+        sidebar 
+**********************/
+.sidebar{
+    min-width: 160px;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+}
+
+.sidebar-contents{
+    padding-left: 16%;
+}
+
+.sidebar-logo{
+    width: 90px;
+    height: 22px;
+    padding: 25px 0 55px 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.sidebar-menu li{
+    margin-bottom: 30px;
+}
+
+.sidebar-menu li a{
+    font-size: 14px;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.sidebar-menu li a:hover{
+    text-decoration: underline;
+}
+
+.sidebar-icons{
+    margin-top: 40px;
+}
+
+.sidebar-icons .fab{
+    padding-right: 15px;
+}
+
+.sidebar-icons .fab:hover{
+    opacity:0.8;
+}
+
+/**********************
+        main 
+**********************/
+.main-contents{
+    width: 80%;
+}
+
+.top-img{
+    margin-bottom: 80px;
+}
+
+.top-img img{
+    width: 100%;
+}
+
+.contents-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+h1{
+    padding: 0 0 90px 0;
+    font-size: 22px;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    text-align: center;
+}
+
+.underline{
+    padding-bottom: 25px;
+    border-bottom: solid 3px white;
+}
+
+#message p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#gallary{
+    margin-bottom: 80px;
+}
+
+#gallary .row{
+    display: flex;
+}
+
+#gallary .small-imgs img{
+    width: calc(100% / 3);
+}
+
+#gallary .big-img{
+    width: 100%;
+}
+
+.brand-wrapper{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.brand-wrapper .item{
+    width: 25%;
+    padding: 0 3%;
+}
+
+.brand-wrapper img{
+    width: 100%;
+}
+.brand-wrapper p{
+    margin: 10px 0 0 0;
+}
+
+.project-item{
+    /* display: flex; */
+    margin-bottom: 70px;
+}
+
+
+.project-item img{
+    width: 370px;
+    height: 225px;
+    margin: 0 20px 35px 20px;
+    float: left;
+}
+
+.project-item:last-child {
+    clear: both;
+}
+
+#project .items{
+    margin-bottom: 120px;
+}
+
+.company-contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-contents p{
+    width: 40%;
+    margin-right: 20px;
+}
+.company-contents .gg-map{
+    width: 60%;
+}
+
+.company-contents iframe{
+    width: 100%;
+}
+
+#company{
+    margin-bottom: 320px;
+}
+
+footer{
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+footer a{
+    color: blue;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
